@@ -8,9 +8,9 @@ script:
   - CI=false npm run build
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $github_token
+  cleanup: true
+  token: $github_token
   local_dir: build
   on:
     branch: dev
-  target-branch: master
+  target_branch: master
