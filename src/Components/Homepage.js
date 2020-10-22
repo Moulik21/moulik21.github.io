@@ -35,10 +35,10 @@ class Homepage extends Component {
                     {' '}.
                 </p>
 
-                <p>I&apos;ve got one teaching assistantship and about 2 years of experience in software development including Full-stack development and DevOps; <a href='/#/resume'>check out my resume here</a>!</p>
+                <p>I&apos;ve been a teaching assistant and have about 2 years of experience in software development including Full-stack development and DevOps; <a href='/#/resume'>check out my resume here</a>!</p>
 
                 <p>
-                    Apart from all that, I&apos;m a big fan of learning new hobbies. I absoutely love to cook (making chili paneer being my favourite), and I like 
+                    Apart from all that, I&apos;m a big fan of learning new hobbies. I absolutely love to cook (making chili paneer being my favourite), and I like 
                     <a href="/#/gallery"> take photos</a>
                     {' '}
                     on occasion.
