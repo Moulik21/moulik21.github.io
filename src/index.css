@@ -1,13 +1,190 @@
+* {
+  box-sizing: border-box;
+}
 body {
+  font-family: 'Roboto', serif;  
+  font-weight: 300;
+}
+input         {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+  text-align: center;
+  margin-left:auto; 
+  margin-right:auto;
+}
+input:focus {
+outline: none;
+}
+button {
+  padding: 6px 4px; 
+  outline: none; 
+  background: rgb(255, 255, 255); 
+  border: 2px solid rgb(241, 241, 241); 
+  border-radius: 4px;
+}
+h1 {
+  height: 100%;
+  margin: 0.25em;
+  text-align: center; 
+  font-size: 4.5em;
+  font-weight: 100;
+}
+b {
+  font-weight: 400;
+}
+h2 {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 3em;
+  font-weight: 300;
+}
+h3 {
+  height: 100%;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+}
+h4 {
+  height: 100%;
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+.header {
+  text-align: center;
+  padding: 0;
+}
+.header li a, .dropbtn {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  outline: none;
+}
+.header li a:hover, .dropbtn:hover {
+  font-style: italic;
+}
+.header li a.active {
+  font-weight: 500;
+}
+.dropdown {
+  display: inline;
+  overflow: auto;
+}
+.dropbtn {
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+}
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+.content {
+  display: block;
+  max-width: 1000px;
+  padding-left: auto;
+  padding-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 100%;
+  flex: 1 0 auto;
+}
+/* here the rules for small windows */
+@media (max-width: 650px) { 
+  .react-pdf__Document {
+    visibility: hidden;
+  } 
+}
+/* here the rules for small windows */
+@media (max-width: 950px) {   
+  .year,.term {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* here the rules for windows above 900px */
+@media (min-width: 950px) {  
+  .year,.term {
+    float: left;
+  }
+  .react-pdf__Document {
+    margin-right: 40px;
+  }  
 }
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.social {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.social a {
+  margin-right: 1em;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.social a img {
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+.term {
+  min-width: 300px;
+  max-width: 300px;
+}
+.title {
+  align-content: center;
+  text-align: center;
+}
+.finalYear {
+  float: inline-start;
+}
+canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+}
+.reflectionTitle {
+  height: 100%;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 100;
+}
+.mui-form {
+  text-align: center;
+}
+a { 
+  text-decoration: none; 
+}
+.ReactTable .rt-tbody{
+  overflow: overlay;
+  }
