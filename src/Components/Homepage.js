@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Img } from 'react-image';
+import { Helmet } from 'react-helmet';
 
 class Homepage extends Component {
     render() {
