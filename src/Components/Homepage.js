@@ -5,6 +5,11 @@ class Homepage extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                    <title>Moulik Gaglani - Personal Website</title>
+                    <meta name="description" content="A bit about me on the internet."/>
+                    <link rel="canonical" href="https://moulikgaglani.me/#" />                    
+                </Helmet>
                 <div className="intro-pic">
                     <Img src=""/>
                 </div>
