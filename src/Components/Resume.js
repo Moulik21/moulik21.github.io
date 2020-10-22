@@ -9,6 +9,12 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Resume extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            titleName: 'Moulik Gaglani - Resume'
+        };
+    }
     
     removeTextLayerOffset() {
         const textLayers = document.querySelectorAll(".react-pdf__Page__textContent");
@@ -24,7 +30,7 @@ class Resume extends Component {
         return (
             <div>
                 <Helmet>
-                    <title>Moulik Gaglani - Resume</title>
+                    <title>{this.state.titleName}</title>
                     <meta name="description" content="My latest resume."/>
                     <link rel="canonical" href="https://moulikgaglani.me/#/resume" />                    
                 </Helmet>

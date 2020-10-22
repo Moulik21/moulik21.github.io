@@ -3,11 +3,17 @@ import { Img } from 'react-image';
 import { Helmet } from 'react-helmet';
 
 class Homepage extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            titleName: 'Moulik Gaglani - Personal Website'
+        };
+    }
     render() {
         return (
             <div>
                 <Helmet>
-                    <title>Moulik Gaglani - Personal Website</title>
+                    <title>{this.state.titleName}</title>
                     <meta name="description" content="A bit about me on the internet."/>
                     <link rel="canonical" href="https://moulikgaglani.me/#" />                    
                 </Helmet>
