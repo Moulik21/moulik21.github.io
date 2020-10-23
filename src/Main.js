@@ -28,7 +28,7 @@ class Main extends Component {
     render() {
         const { cookies } = this.props;
         return (
-            <HashRouter onUpdate={fireTracking}>
+            <HashRouter basename={process.env.PUBLIC_URL} onUpdate={fireTracking}>
                 <div>
                     <div className="content">
                         <ul className="header">
