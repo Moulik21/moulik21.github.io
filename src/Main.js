@@ -14,7 +14,7 @@ import Social from './Components/Social';
 import Resume from './Components/Resume';
 
 
-ReactGA.initialize('G-KQ911JY8FG');
+ReactGA.initialize('G-L4TKGYV9F0');
 
 function fireTracking() {
     ReactGA.pageview(window.location.pathname + window.location.search);
