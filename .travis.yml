@@ -8,8 +8,8 @@ script:
   - CI=false npm run build
 deploy:
   provider: pages
-  cleanup: true
-  GITHUB_TOKEN: $github_token
+  skip_ cleanup: true
+  github_token: $github_token
   local_dir: build
   on:
     branch: dev
