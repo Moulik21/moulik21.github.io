@@ -15,7 +15,7 @@ class Homepage extends Component {
                 <Helmet>
                     <title>{this.state.titleName}</title>
                     <meta name="description" content="A bit about me on the internet."/>
-                    <link rel="canonical" href="https://moulikgaglani.me/#" />                    
+                    <link rel="canonical" href="https://moulikgaglani.com/#" />                    
                 </Helmet>
                 <div className="intro-pic">
                     <Img src=""/>
